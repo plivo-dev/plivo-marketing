@@ -203,7 +203,7 @@ async function validateEmail(email) {
 
   // return false;
   //console.log($(email).val());
-  const submitEndPoint = "http://localhost:8888/.netlify/functions/email-validation";
+  const submitEndPoint = "https://contacto-hubspot-master.netlify.app/.netlify/functions/email-validation";
   let email_add = $(email).val();
 
   let $currentInput = $(email);
@@ -448,7 +448,8 @@ $(document).ready(function () {
           $(this).find('[type="submit"]').toggleClass("loading");
           // const submitEndPoint = 'https://contacto-hubspot-master.netlify.app/.netlify/functions/hubspotsubmition3';
           //const submitEndPoint = "https://contacto-hubspot-master.netlify.app/.netlify/functions/hubspotsubmition2";
-          const submitEndPoint = "http://localhost:8888/.netlify/functions/hubspotsubmition-novalidation";
+          const submitEndPoint =
+            "https://contacto-hubspot-master.netlify.app/.netlify/functions/hubspotsubmition-novalidation";
           //const submitEndPoint = "http://localhost:8888/.netlify/functions/hubspotsubmition2";
           const valid = formItem.checkValidity();
           let userCountryCode = $(phoneCountry).val().toUpperCase();
