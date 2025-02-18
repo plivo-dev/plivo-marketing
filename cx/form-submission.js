@@ -671,6 +671,7 @@ $(document).ready(function () {
                 }
               })
               .catch((error) => {
+                console.log(error);
                 console.log("CORS error");
                 $(this).find('[type="submit"]').toggleClass("loading");
               });
